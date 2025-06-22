@@ -1,0 +1,154 @@
+[2025-06-22 01:51:58,659] INFO in db: Connected to mongodb successfully.
+[2025-06-22 01:51:59,462] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-22 01:51:59,463] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-22 01:51:59,477] INFO in _internal:  * Restarting with stat
+[2025-06-22 01:52:00,948] INFO in db: Connected to mongodb successfully.
+[2025-06-22 01:52:01,066] WARNING in _internal:  * Debugger is active!
+[2025-06-22 01:52:01,081] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 01:57:35,452] INFO in db: Connected to mongodb successfully.
+[2025-06-22 01:57:35,581] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-06-22 01:57:35,583] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-22 01:57:35,587] INFO in _internal:  * Restarting with stat
+[2025-06-22 01:57:36,968] INFO in db: Connected to mongodb successfully.
+[2025-06-22 01:57:37,066] WARNING in _internal:  * Debugger is active!
+[2025-06-22 01:57:37,084] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 01:59:33,298] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 01:59:33] "[32mGET /inventory HTTP/1.1[0m" 308 -
+[2025-06-22 02:01:13,781] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:01:13] "[32mGET /inventory HTTP/1.1[0m" 308 -
+[2025-06-22 02:02:00,618] INFO in main: fetched item stock: Mango
+[2025-06-22 02:02:00,619] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:02:00] "GET /inventory/Mango HTTP/1.1" 200 -
+[2025-06-22 02:05:03,135] INFO in main: inventory record added for iteam: apple, id :685717772ece3aef3b7c8439
+[2025-06-22 02:05:03,136] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:05:03] "[35m[1mPOST /inventory HTTP/1.1[0m" 201 -
+[2025-06-22 02:06:31,004] INFO in main: Updated record for apple
+[2025-06-22 02:06:31,005] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:06:31] "PUT /inventory/apple HTTP/1.1" 200 -
+[2025-06-22 02:07:14,968] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:07:14] "[32mGET /inventory HTTP/1.1[0m" 308 -
+[2025-06-22 02:09:05,606] WARNING in auth: Unauthqrized attempt user: 127.0.0.1
+[2025-06-22 02:09:05,607] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:09:05] "[31m[1mGET /inventory/ HTTP/1.1[0m" 401 -
+[2025-06-22 02:09:05,706] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:09:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-22 02:09:41,026] WARNING in auth: Unauthqrized attempt user: 127.0.0.1
+[2025-06-22 02:09:41,027] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:09:41] "[31m[1mPUT /inventory/apple HTTP/1.1[0m" 401 -
+[2025-06-22 02:10:54,125] WARNING in main: POST /inventory - Duplicate item: apple
+[2025-06-22 02:10:54,126] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:10:54] "[31m[1mPOST /inventory HTTP/1.1[0m" 409 -
+[2025-06-22 02:11:38,001] INFO in main: inventory record added for iteam: orange, id :685719012ece3aef3b7c843b
+[2025-06-22 02:11:38,002] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:11:38] "[35m[1mPOST /inventory HTTP/1.1[0m" 201 -
+[2025-06-22 02:12:03,296] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:12:03] "[32mGET /inventory HTTP/1.1[0m" 308 -
+[2025-06-22 02:13:00,862] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\main.py', reloading
+[2025-06-22 02:13:01,308] INFO in _internal:  * Restarting with stat
+[2025-06-22 02:13:03,231] INFO in db: Connected to mongodb successfully.
+[2025-06-22 02:13:03,353] WARNING in _internal:  * Debugger is active!
+[2025-06-22 02:13:03,373] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 02:13:10,157] ERROR in main: unhandled exception
+Traceback (most recent call last):
+  File "C:\Users\Prajjwal\Desktop\InventoryManagement\env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Prajjwal\Desktop\InventoryManagement\env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Prajjwal\Desktop\InventoryManagement\auth.py", line 13, in decorated
+    return f(*args, **kwargs)
+TypeError: list_inventory() missing 1 required positional argument: 'item'
+[2025-06-22 02:13:10,167] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:13:10] "[35m[1mGET /inventory HTTP/1.1[0m" 500 -
+[2025-06-22 02:13:29,683] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\main.py', reloading
+[2025-06-22 02:13:30,239] INFO in _internal:  * Restarting with stat
+[2025-06-22 02:13:31,662] INFO in db: Connected to mongodb successfully.
+[2025-06-22 02:13:31,760] WARNING in _internal:  * Debugger is active!
+[2025-06-22 02:13:31,780] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 02:13:37,300] INFO in main: Fetched all record in inventory
+[2025-06-22 02:13:37,301] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:13:37] "GET /inventory HTTP/1.1" 200 -
+[2025-06-22 02:14:22,395] INFO in main: deleted item record: apple
+[2025-06-22 02:14:22,396] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:14:22] "DELETE /inventory/apple HTTP/1.1" 200 -
+[2025-06-22 02:14:25,816] INFO in main: Fetched all record in inventory
+[2025-06-22 02:14:25,817] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:14:25] "GET /inventory HTTP/1.1" 200 -
+[2025-06-22 02:14:38,225] INFO in main: inventory record added for iteam: apple, id :685719b601eb0356d89b30ed
+[2025-06-22 02:14:38,226] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:14:38] "[35m[1mPOST /inventory HTTP/1.1[0m" 201 -
+[2025-06-22 02:14:59,310] INFO in main: inventory record added for iteam: lychee, id :685719cb01eb0356d89b30ee
+[2025-06-22 02:14:59,311] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:14:59] "[35m[1mPOST /inventory HTTP/1.1[0m" 201 -
+[2025-06-22 02:15:05,480] INFO in main: Fetched all record in inventory
+[2025-06-22 02:15:05,481] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 02:15:05] "GET /inventory HTTP/1.1" 200 -
+[2025-06-22 12:22:07,039] CRITICAL in db: Connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6857a81172e0613ed949fc84, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-06-22 12:22:07,458] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.2:8080
+[2025-06-22 12:22:07,458] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-22 12:22:07,487] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:22:14,954] CRITICAL in db: Connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6857a8198b1206756fff8eb3, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-06-22 12:22:15,036] WARNING in _internal:  * Debugger is active!
+[2025-06-22 12:22:15,045] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 12:22:43,963] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\main.py', reloading
+[2025-06-22 12:22:44,139] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:22:49,707] CRITICAL in db: Connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6857a83c3ae4c916cf8ce1f8, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-06-22 12:22:49,728] WARNING in _internal:  * Debugger is active!
+[2025-06-22 12:22:49,738] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 12:22:51,851] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\main.py', reloading
+[2025-06-22 12:22:52,307] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:22:57,878] CRITICAL in db: Connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6857a844ba8de0a84c8c787c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-06-22 12:31:02,779] CRITICAL in db: Connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6857aa29dd92c832a3c33dea, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-06-22 12:31:02,837] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.2:8080
+[2025-06-22 12:31:02,837] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-22 12:31:02,839] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:31:08,369] CRITICAL in db: Connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6857aa2fa108147f9b7aaa0b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-06-22 12:31:08,390] WARNING in _internal:  * Debugger is active!
+[2025-06-22 12:31:08,400] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 12:33:23,358] WARNING in auth: Unauthqrized attempt user: 127.0.0.1
+[2025-06-22 12:33:23,358] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 12:33:23] "[31m[1mGET /summary HTTP/1.1[0m" 401 -
+[2025-06-22 12:33:54,125] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\config.py', reloading
+[2025-06-22 12:33:54,350] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:34:55,480] INFO in db: Connected to mongodb successfully.
+[2025-06-22 12:34:55,579] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.2:8080
+[2025-06-22 12:34:55,579] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-22 12:34:55,580] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:34:57,236] INFO in db: Connected to mongodb successfully.
+[2025-06-22 12:34:57,310] WARNING in _internal:  * Debugger is active!
+[2025-06-22 12:34:57,318] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 12:35:04,893] WARNING in auth: Unauthqrized attempt user: 127.0.0.1
+[2025-06-22 12:35:04,894] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 12:35:04] "[31m[1mGET /summary HTTP/1.1[0m" 401 -
+[2025-06-22 12:35:12,876] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\config.py', reloading
+[2025-06-22 12:35:13,127] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:35:14,297] INFO in db: Connected to mongodb successfully.
+[2025-06-22 12:35:14,362] WARNING in _internal:  * Debugger is active!
+[2025-06-22 12:35:14,369] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 12:35:15,464] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\config.py', reloading
+[2025-06-22 12:35:15,935] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:35:17,171] INFO in db: Connected to mongodb successfully.
+[2025-06-22 12:35:17,261] WARNING in _internal:  * Debugger is active!
+[2025-06-22 12:35:17,268] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 12:35:24,070] INFO in main: Calculated networth:36560.0, total quantity:997.0
+[2025-06-22 12:35:24,071] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 12:35:24] "GET /summary HTTP/1.1" 200 -
+[2025-06-22 12:36:12,421] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\main.py', reloading
+[2025-06-22 12:36:12,945] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:36:14,315] INFO in db: Connected to mongodb successfully.
+[2025-06-22 12:36:14,397] WARNING in _internal:  * Debugger is active!
+[2025-06-22 12:36:14,405] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 12:36:18,595] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\main.py', reloading
+[2025-06-22 12:36:19,149] INFO in _internal:  * Restarting with stat
+[2025-06-22 12:36:20,142] INFO in db: Connected to mongodb successfully.
+[2025-06-22 12:36:20,205] WARNING in _internal:  * Debugger is active!
+[2025-06-22 12:36:20,213] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 12:40:00,585] INFO in main: fetched item stock: Mango
+[2025-06-22 12:40:00,587] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 12:40:00] "GET /inventory/Mango HTTP/1.1" 200 -
+[2025-06-22 15:02:18,641] CRITICAL in db: Connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6857cd9d1d31f2bc505a33a8, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-06-22 15:02:19,257] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.2:8080
+[2025-06-22 15:02:19,258] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-06-22 15:02:19,278] INFO in _internal:  * Restarting with stat
+[2025-06-22 15:02:28,166] CRITICAL in db: Connection failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6857cda7a8c6d632735ae1d9, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2025-06-22 15:02:28,406] WARNING in _internal:  * Debugger is active!
+[2025-06-22 15:02:28,421] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 15:02:34,842] INFO in _internal:  * Detected change in 'C:\\Users\\Prajjwal\\Desktop\\InventoryManagement\\config.py', reloading
+[2025-06-22 15:02:35,452] INFO in _internal:  * Restarting with stat
+[2025-06-22 15:02:37,508] INFO in db: Connected to mongodb successfully.
+[2025-06-22 15:02:37,601] WARNING in _internal:  * Debugger is active!
+[2025-06-22 15:02:37,614] INFO in _internal:  * Debugger PIN: 606-268-326
+[2025-06-22 15:02:43,571] INFO in main: Calculated networth:29560.0, total quantity:1247.0
+[2025-06-22 15:02:43,572] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 15:02:43] "GET /summary HTTP/1.1" 200 -
+[2025-06-22 16:22:48,576] INFO in main: Calculated networth:21380.0, total quantity:1251.0
+[2025-06-22 16:22:48,585] INFO in _internal: 127.0.0.1 - - [22/Jun/2025 16:22:48] "GET /summary HTTP/1.1" 200 -
