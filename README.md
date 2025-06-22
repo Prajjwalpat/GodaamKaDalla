@@ -6,6 +6,8 @@
 4)Setup mongodb uri and API key in config.py
 5)Python app.py
 
+Hostname=https://inventorymanagement.fly.dev
+
 ##Endpoints(curl samples):
 curl -X GET http://127.0.0.1:8080/summary -H "x-api-key: <yourapikey>"
 Get networth and quantity of stocks
