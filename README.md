@@ -33,4 +33,12 @@ curl -X GET http://127.0.0.1:8080/inventory/Mango -H "x-api-key: <yourapikey>" <
 get details of an item<br><br><br>
 
 <hr><br>
-</strong>curl request for API for currency converter: curl "https://data.fixer.io/api/latest?access_key=<fixerioAPIkey>&base=EUR&symbols=INR"<br>
+</strong>curl request for API for currency converter: curl "https://data.fixer.io/api/latest?access_key=<fixerioAPIkey>&base=EUR&symbols=INR"<br><hr>
+<h3>Database schema:</h3><hr>
+{
+  "_id": long int,
+  "item": str,
+  "qty": int,
+  "price": float
+}
+item is unique
